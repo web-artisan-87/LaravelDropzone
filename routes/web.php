@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/upload-file-index', function(){
+    return view('index');
+});
+Route::post('/upload-file', 'FilesController@uploadFile');
